@@ -1,6 +1,7 @@
 # How to get Liense of  CAR（车牌识别）
->指导教师 ：王东强 
->参与者 : 尚崇庆  李秋良
+> 指导教师 ：王东强 
+
+> 参与者 : 尚崇庆  李秋良
 
 > 参考B站UP主：[敲出一片天_bili](https://space.bilibili.com/412530967?spm_id_from=333.788.b_765f7570696e666f.2)
 > BV : [yg4y187kU](https://www.bilibili.com/video/BV1yg4y187kU)
@@ -12,8 +13,8 @@
  - part1 : 获取一张车辆图片的车牌
  - part2 ：获得车牌图片中的字符图片
  - part3 ：对字符图片进行模板匹配
+
  
- 
- 
- 
+ 项目进展随时更新
+
  > 更新日期：2020年4月30日 星期四
