@@ -25,11 +25,12 @@ def img_read(path):
 def gray_guss(image):
     '''高斯灰度处理'''
     image = cv2.GaussianBlur(image, (3, 3), 0)
-    gray_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
+    gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
     
     return gray_image
 
 def get_carLicense_img(image):
+    license_all = []
     '''获取车牌'''
     origin_image = image.copy()
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (17, 5))
@@ -57,6 +58,7 @@ def get_carLicense_img(image):
         w = rect[2]
         h = rect[3]
         B = w/h
-        if  3<B<4 :
+        if  3<B<4.5 :
             image = origin_image[y:y + h, x:x + w]
-            return image
+            license_all.append(image)
+    return license_all
